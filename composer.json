@@ -1,0 +1,21 @@
+{
+    "name": "hexlet/code",
+    "license": "proprietary",
+    "description": "first php project",
+    "type": "project",
+    "bin": [
+        "bin/brain-games"
+      ],
+    "autoload": {
+        "files": [
+            "src/Runner.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "sergei",
+            "email": "yasen20008@gmail.com"
+        }
+    ],
+    "require": {}
+}
