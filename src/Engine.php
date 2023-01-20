@@ -16,6 +16,9 @@ function defineGameLogic($game)
     } elseif ($game === 'gcd') {
         $text = 'Find the greatest common divisor of given numbers.';
         $gameLogic = "BrainGames\BrainGcd\brainGcd";
+    } elseif ($game === 'progression') {
+        $text = 'What number is missing in the progression?';
+        $gameLogic = "BrainGames\BrainProgression\brainProgression";
     }
     return [$text, $gameLogic];
 }

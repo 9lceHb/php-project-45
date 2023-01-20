@@ -8,10 +8,13 @@ brain-even:
 		./bin/brain-even
 
 brain-calc:
-		brain-calc
+		./bin/brain-calc
 
 brain-gcd:
-		brain-gcd
+		./bin/brain-gcd
+
+brain-progression:
+		./bin/brain-progression
 
 validate:
 		composer validate

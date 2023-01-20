@@ -2,8 +2,6 @@
 
 namespace BrainGames\BrainCalc;
 
-use function cli\line;
-
 function brainCalc()
 {
     $num1 = rand(1, 100);

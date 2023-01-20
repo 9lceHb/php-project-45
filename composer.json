@@ -5,7 +5,10 @@
     "type": "project",
     "bin": [
         "bin/brain-games",
-        "bin/brain-even"
+        "bin/brain-even",
+        "bin/brain-progression",
+        "bin/brain-calc",
+        "bin/brain-gcd"
       ],
     "autoload": {
         "files": [
@@ -13,7 +16,8 @@
             "src/Engine.php",
             "src/games/BrainEven.php",
             "src/games/BrainCalc.php",
-            "src/games/BrainGcd.php"
+            "src/games/BrainGcd.php",
+            "src/games/BrainProgression.php"
         ]
     },
     "authors": [
