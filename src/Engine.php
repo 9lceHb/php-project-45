@@ -5,7 +5,7 @@ namespace BrainGames\Engine;
 use function cli\line;
 use function cli\prompt;
 
-function defineGameLogic($game)
+function defineGameLogic(string $game)
 {
     if ($game === 'calc') {
         $text = 'What is the result of the expression?';
@@ -19,14 +19,14 @@ function defineGameLogic($game)
     } elseif ($game === 'progression') {
         $text = 'What number is missing in the progression?';
         $gameLogic = "BrainGames\BrainProgression\brainProgression";
-    } elseif ($game === 'prime') {
+    } else {
         $text = 'Answer "yes" if given number is prime. Otherwise answer "no".';
         $gameLogic = "BrainGames\BrainPrime\brainPrime";
     }
     return [$text, $gameLogic];
 }
 
-function game($name, $game)
+function game(string $name, string $game)
 {
     [$text, $gameLogic] = defineGameLogic($game);
     line($text);

@@ -2,7 +2,7 @@
 
 namespace BrainGames\BrainPrime;
 
-function isPrime($num)
+function isPrime(int $num)
 {
     if ($num % 2 === 0) {
         return false;
