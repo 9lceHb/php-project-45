@@ -14,4 +14,4 @@ use function BrainGames\Cli\getName;
 
 $name = getName();
 
-game($name, 'even');
+game($name, 'gcd');

@@ -10,6 +10,9 @@ brain-even:
 brain-calc:
 		brain-calc
 
+brain-gcd:
+		brain-gcd
+
 validate:
 		composer validate
 

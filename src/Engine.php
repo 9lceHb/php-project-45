@@ -1,6 +1,6 @@
 <?php
 
-namespace BrainGames\Index;
+namespace BrainGames\Engine;
 
 use function cli\line;
 use function cli\prompt;
@@ -13,6 +13,9 @@ function defineGameLogic($game)
     } elseif ($game === 'even') {
         $text = 'Answer "yes" if the number is even, otherwise answer "no".';
         $gameLogic = "BrainGames\BrainEven\brainEven";
+    } elseif ($game === 'gcd') {
+        $text = 'Find the greatest common divisor of given numbers.';
+        $gameLogic = "BrainGames\BrainGcd\brainGcd";
     }
     return [$text, $gameLogic];
 }
