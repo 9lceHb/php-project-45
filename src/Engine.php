@@ -19,6 +19,9 @@ function defineGameLogic($game)
     } elseif ($game === 'progression') {
         $text = 'What number is missing in the progression?';
         $gameLogic = "BrainGames\BrainProgression\brainProgression";
+    } elseif ($game === 'prime') {
+        $text = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+        $gameLogic = "BrainGames\BrainPrime\brainPrime";
     }
     return [$text, $gameLogic];
 }
