@@ -4,14 +4,26 @@ namespace BrainGames\Index;
 
 use function cli\line;
 use function cli\prompt;
-use function BrainGames\BrainEven\brainEven;
 
-function game($name)
+function defineGameLogic($game)
 {
-    line('Answer "yes" if the number is even, otherwise answer "no".');
+    if ($game === 'calc') {
+        $text = 'What is the result of the expression?';
+        $gameLogic = "BrainGames\BrainCalc\brainCalc";
+    } elseif ($game === 'even') {
+        $text = 'Answer "yes" if the number is even, otherwise answer "no".';
+        $gameLogic = "BrainGames\BrainEven\brainEven";
+    }
+    return [$text, $gameLogic];
+}
+
+function game($name, $game)
+{
+    [$text, $gameLogic] = defineGameLogic($game);
+    line($text);
     $correctAnswerCount = 0;
     while ($correctAnswerCount < 3) {
-        [$question, $correctAnswer] = brainEven();
+        [$question, $correctAnswer] = $gameLogic();
         line("Question: %s", $question);
         $userAnswer = prompt('Your answer');
         if ($userAnswer === $correctAnswer) {

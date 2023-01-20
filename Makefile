@@ -7,6 +7,9 @@ brain-games:
 brain-even:
 		./bin/brain-even
 
+brain-calc:
+		brain-calc
+
 validate:
 		composer validate
 

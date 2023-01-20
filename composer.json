@@ -10,8 +10,9 @@
     "autoload": {
         "files": [
             "src/Cli.php",
-            "src/Index.php",
-            "src/games/BrainEven.php"
+            "src/Engine.php",
+            "src/games/BrainEven.php",
+            "src/games/BrainCalc.php"
         ]
     },
     "authors": [
