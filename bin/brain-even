@@ -9,4 +9,9 @@ if (file_exists($autoloadPath1)) {
     require_once $autoloadPath2;
 }
 
-BrainGames\Cli\getName();
+use function BrainGames\Index\game;
+use function BrainGames\Cli\getName;
+
+$name = getName();
+
+game($name);

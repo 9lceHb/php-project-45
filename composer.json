@@ -4,11 +4,14 @@
     "description": "first php project",
     "type": "project",
     "bin": [
-        "bin/brain-games"
+        "bin/brain-games",
+        "bin/brain-even"
       ],
     "autoload": {
         "files": [
-            "src/Runner.php"
+            "src/Cli.php",
+            "src/Index.php",
+            "src/games/BrainEven.php"
         ]
     },
     "authors": [
@@ -17,5 +20,10 @@
             "email": "yasen20008@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "wp-cli/php-cli-tools": "^0.11.17"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "*"
+    }
 }
